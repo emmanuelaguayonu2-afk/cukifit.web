@@ -2,34 +2,150 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Un espacio para informarnos y cuidarnos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prevención - Un espacio para informarnos y cuidarnos</title>
+  <style>
+    :root {
+      --primary-color: #0288D1;
+      --secondary-color: #006064;
+      --accent-color: #03A9F4;
+      --bg-color: #E0F7FA;
+      --card-bg: #FFFFFF;
+      --text-color: #333333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+
+    header h2 {
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .content-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2.page-title {
+      color: var(--secondary-color);
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    li b {
+      color: var(--secondary-color);
+    }
+  </style>
 </head>
 <body>
-  <body bgcolor="#E0F7FA">
-<font face="Trebuchet MS" color="#006064">
-<h1><font face="Trebuchet MS"><a href="index.html#inicio"><font color="#0288D1" size="6">Un espacio para informarnos y cuidarnos</font></a></font></h1>
 
-<h2 id="inicio"><font face="Trebuchet MS"><a href="index.html#inicio"><font color="#03A9F4" size="4">Información para jóvenes</font></a></font></h2>
+  <header>
+    <h1><a href="index.html#inicio">Un espacio para informarnos y cuidarnos</a></h1>
+    <h2 id="inicio">Información para jóvenes</h2>
+  </header>
+
   <nav>
     <a href="index.html">INICIO</a>
     <a href="autocuidado.html">AUTOCUIDADO</a>
-    <a href="prevencion.html">PREVENCION</a>
+    <a href="prevencion.html">PREVENCIÓN</a>
     <a href="derechosyproyectodevida.html">DERECHOS Y PROYECTO DE VIDA</a>
   </nav>
-<h2 id="prevencion">Prevención</h2>
-  <img src="https://tse1.mm.bing.net/th/id/OIP.JAMHBbZtXB60HR8yxUjM9QHaGY?r=0&pid=Api&h=220&P=0" alt="Imagen sobre prevención">
- <font face="Trebuchet MS" color="#006064">
-  <p>La <b>prevención</b> es el conjunto de acciones, conocimientos y decisiones conscientes orientadas a anticipar, evitar o mitigar riesgos que puedan comprometer nuestra salud integral y proyecto de vida.</p>
 
-  <p>En el marco de la <b>Educación Integral de la Sexualidad (EIS)</b>, la prevención se convierte en una herramienta clave para el desarrollo autónomo y seguro a través de los siguientes pilares:</p>
+  <main class="container">
+    <article class="content-card">
+      <h2 id="prevencion" class="page-title">Prevención</h2>
 
-  <ul>
-    <li><b>Información confiable y veraz:</b> Acceder a datos científicos sobre la salud sexual y reproductiva para tomar decisiones basadas en la seguridad y el conocimiento, evitando mitos o desinformación.</li>
-    <li><b>Cuidado de la salud integral:</b> Adoptar medidas de protección (como el uso de métodos anticonceptivos y de barrera) para prevenir infecciones de transmisión sexual (ITS) y embarazos no planificados.</li>
-    <li><b>Límites y autodeterminación:</b> Desarrollar la capacidad de identificar situaciones de riesgo, presiones sociales o violencia, fortaleciendo el consentimiento y el respeto a la autonomía.</li>
-    <li><b>Redes de apoyo y comunicación:</b> Acudir a profesionales de la salud, docentes o adultos de confianza ante dudas, inquietudes o situaciones complejas que requieran orientación.</li>
-    <li><b>Promoción de entornos seguros:</b> Fomentar espacios de convivencia pacífica, inclusión y respeto mutuo en los que se prevenga cualquier forma de discriminación o abuso.</li>
-  </ul>
-</font>
+      <div class="img-container">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.JAMHBbZtXB60HR8yxUjM9QHaGY?r=0&pid=Api&h=220&P=0" alt="Imagen sobre prevención">
+      </div>
+
+      <p>La <b>prevención</b> es el conjunto de acciones, conocimientos y decisiones conscientes orientadas a anticipar, evitar o mitigar riesgos que puedan comprometer nuestra salud integral y proyecto de vida.</p>
+
+      <p>En el marco de la <b>Educación Integral de la Sexualidad (EIS)</b>, la prevención se convierte en una herramienta clave para el desarrollo autónomo y seguro a través de los siguientes pilares:</p>
+
+      <ul>
+        <li><b>Información confiable y veraz:</b> Acceder a datos científicos sobre la salud sexual y reproductiva para tomar decisiones basadas en la seguridad y el conocimiento, evitando mitos o desinformación.</li>
+        <li><b>Cuidado de la salud integral:</b> Adoptar medidas de protección (como el uso de métodos anticonceptivos y de barrera) para prevenir infecciones de transmisión sexual (ITS) y embarazos no planificados.</li>
+        <li><b>Límites y autodeterminación:</b> Desarrollar la capacidad de identificar situaciones de riesgo, presiones sociales o violencia, fortaleciendo el consentimiento y el respeto a la autonomía.</li>
+        <li><b>Redes de apoyo y comunicación:</b> Acudir a profesionales de la salud, docentes o adultos de confianza ante dudas, inquietudes o situaciones complejas que requieran orientación.</li>
+        <li><b>Promoción de entornos seguros:</b> Fomentar espacios de convivencia pacífica, inclusión y respeto mutuo en los que se prevenga cualquier forma de discriminación o abuso.</li>
+      </ul>
+    </article>
+  </main>
+
 </body>
 </html>
