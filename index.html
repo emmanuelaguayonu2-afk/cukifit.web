@@ -2,46 +2,182 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Un espacio para informarnos y cuidarnos</title>
-</head>
-<body bgcolor="#E0F7FA">
-<font face="Trebuchet MS" color="#006064">
-<h1><font face="Trebuchet MS"><a href="index.html#inicio"><font color="#0288D1" size="6">Un espacio para informarnos y cuidarnos</font></a></font></h1>
+  <style>
+    :root {
+      --primary-color: #0288D1;
+      --secondary-color: #006064;
+      --accent-color: #03A9F4;
+      --bg-color: #E0F7FA;
+      --card-bg: #FFFFFF;
+      --text-color: #333333;
+    }
 
-<h2 id="inicio"><font face="Trebuchet MS"><a href="index.html#inicio"><font color="#03A9F4" size="4">Información para jóvenes</font></a></font></h2>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+
+    header h2 {
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro-card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .intro-card a {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .section-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section-card h2 {
+      color: var(--secondary-color);
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 8px;
+    }
+
+    .section-card img {
+      max-width: 100%;
+      height: auto;
+      max-height: 220px;
+      border-radius: 8px;
+      margin: 15px 0;
+      object-fit: cover;
+    }
+
+    .btn-more {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-more:hover {
+      background-color: var(--primary-color);
+    }
+  </style>
+</head>
 <body>
-   <nav>
+
+  <header>
+    <h1><a href="index.html#inicio">Un espacio para informarnos y cuidarnos</a></h1>
+    <h2 id="inicio">Información para jóvenes</h2>
+  </header>
+
+  <nav>
     <a href="index.html">INICIO</a>
     <a href="autocuidado.html">AUTOCUIDADO</a>
     <a href="prevencion.html">PREVENCIÓN</a>
     <a href="derechosyproyectodevida.html">DERECHOS Y PROYECTO DE VIDA</a>
   </nav>
-  <p>Este espacio web tiene como propósito compartir información educativa que contribuya al autocuidado, la prevención y la toma de decisiones responsables.</p>
-  <p>En este lugar encontrarás ideas para informarte sobre salud, respeto y decisiones.</p>
-  
-  <p>Puedes ver más información en <a href="https://www.unicef.org/uruguay/crianza/etapa-escolar/Como-hablar-sobre-la-sexualidad">UNICEF Uruguay</a> y <a href="https://www.unfpa.org/es/salud-sexual-y-reproductiva">UNFPA</a>.</p>
 
-   
-  <h2>AUTOCUIDADO</h2>
-  <p>Higiene personal: mantener limpio y cuidado nuestro cuerpo.</p>
-  <p>Prevención: conocer nuestro cuerpo y evitar situaciones que puedan afectar nuestra salud.</p>
-  <p>Respeto y límites: respetar nuestro cuerpo y el de los demás, estableciendo límites personales.</p>
-  <img src="https://tse2.mm.bing.net/th/id/OIP.jh6LBwbrWLq0VS2wqBeUHAHaHa?r=0&pid=Api&h=220&P=0" alt="Imagen sobre autocuidado">
-  <a href="autocuidado.html">Conocer más sobre autocuidado</a>
+  <main class="container">
+    <div class="intro-card">
+      <p>Este espacio web tiene como propósito compartir información educativa que contribuya al autocuidado, la prevención y la toma de decisiones responsables.</p>
+      <p>En este lugar encontrarás ideas para informarte sobre salud, respeto y decisiones.</p>
+      <p>Puedes ver más información en <a href="https://www.unicef.org/uruguay/crianza/etapa-escolar/Como-hablar-sobre-la-sexualidad" target="_blank">UNICEF Uruguay</a> y <a href="https://www.unfpa.org/es/salud-sexual-y-reproductiva" target="_blank">UNFPA</a>.</p>
+    </div>
 
-  <h2>PREVENCIÓN</h2>
-  <p>Prevenir riesgos: conocer situaciones que pueden afectar nuestra salud.</p>
-  <p>Informarse: buscar información confiable para tomar buenas decisiones.</p>
-  <p>Pedir ayuda: acudir a personas de confianza cuando enfrentemos una situación de riesgo.</p>
-  <img src="https://tse1.mm.bing.net/th/id/OIP.JAMHBbZtXB60HR8yxUjM9QHaGY?r=0&pid=Api&h=220&P=0" alt="Imagen sobre prevención">
-  <a href="prevencion.html">Conocer más sobre prevención</a>
+    <article class="section-card">
+      <h2>AUTOCUIDADO</h2>
+      <p><b>Higiene personal:</b> Mantener limpio y cuidado nuestro cuerpo.</p>
+      <p><b>Prevención:</b> Conocer nuestro cuerpo y evitar situaciones que puedan afectar nuestra salud.</p>
+      <p><b>Respeto y límites:</b> Respetar nuestro cuerpo y el de los demás, estableciendo límites personales.</p>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.jh6LBwbrWLq0VS2wqBeUHAHaHa?r=0&pid=Api&h=220&P=0" alt="Imagen sobre autocuidado">
+      <a href="autocuidado.html" class="btn-more">Conocer más sobre autocuidado</a>
+    </article>
 
-  <h2>DERECHOS Y PROYECTO DE VIDA</h2>
-  <p>Establecer metas: definir lo que queremos lograr.</p>
-  <p>Tomar decisiones responsables: pensar en las consecuencias de nuestras acciones.</p>
-  <p>Planificar el futuro: organizar nuestros esfuerzos para alcanzar nuestros objetivos.</p>
- <img src="https://img.freepik.com/fotos-premium/dimensiones-mas-pequenas-que-marco_950002-159948.jpg" alt="Imagen sobre derechos y proyecto de vida" width="300" height="200">
-<a href="derechosyproyectodevida.html">Conocer más sobre derechos y proyecto de vida</a>
+    <article class="section-card">
+      <h2>PREVENCIÓN</h2>
+      <p><b>Prevenir riesgos:</b> Conocer situaciones que pueden afectar nuestra salud.</p>
+      <p><b>Informarse:</b> Buscar información confiable para tomar buenas decisiones.</p>
+      <p><b>Pedir ayuda:</b> Acudir a personas de confianza cuando enfrentemos una situación de riesgo.</p>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.JAMHBbZtXB60HR8yxUjM9QHaGY?r=0&pid=Api&h=220&P=0" alt="Imagen sobre prevención">
+      <a href="prevencion.html" class="btn-more">Conocer más sobre prevención</a>
+    </article>
+
+    <article class="section-card">
+      <h2>DERECHOS Y PROYECTO DE VIDA</h2>
+      <p><b>Establecer metas:</b> Definir lo que queremos lograr.</p>
+      <p><b>Tomar decisiones responsables:</b> Pensar en las consecuencias de nuestras acciones.</p>
+      <p><b>Planificar el futuro:</b> Organizar nuestros esfuerzos para alcanzar nuestros objetivos.</p>
+      <img src="https://img.freepik.com/fotos-premium/dimensiones-mas-pequenas-que-marco_950002-159948.jpg" alt="Imagen sobre derechos y proyecto de vida">
+      <a href="derechosyproyectodevida.html" class="btn-more">Conocer más sobre derechos y proyecto de vida</a>
+    </article>
+  </main>
 
 </body>
 </html>
